@@ -23,8 +23,14 @@ package tv.ouya.console.api;
 public class GamerIdentity
 {
     private static GamerIdentity sGamerIdentity = null;
+    public GamerIdentity()
+    {
+    }
     public static GamerIdentity getInstance()
     {
+        if( sGamerIdentity == null ) {
+            sGamerIdentity = new GamerIdentity();
+        }
         return sGamerIdentity;
     }
     @Deprecated

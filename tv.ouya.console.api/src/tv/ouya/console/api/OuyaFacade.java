@@ -37,6 +37,9 @@ public class OuyaFacade
     }
     public static OuyaFacade getInstance()
     {
+        if( sOuyaFacade == null ) {
+            sOuyaFacade = new OuyaFacade();
+        }
         return sOuyaFacade;
     }
     public static int getOdkVersionNumber()
