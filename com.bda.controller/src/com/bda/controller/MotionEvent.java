@@ -20,22 +20,16 @@
  */
 package com.bda.controller;
 
-public class MotionEvent
+public class MotionEvent extends BaseEvent
 {
-    public static final int ACTION_DOWN = 0;
-    public static final int AXIS_LTRIGGER = 0;
-    public static final int AXIS_RTRIGGER = 0;
     public static final int AXIS_X = 0;
-    public static final int AXIS_Y = 0;
-    public static final int AXIS_Z = 0;
-    public static final int AXIS_RZ = 0;
+    public static final int AXIS_Y = 1;
+    public static final int AXIS_Z = 11;
+    public static final int AXIS_RZ = 14;
+    public static final int AXIS_LTRIGGER = 17;
+    public static final int AXIS_RTRIGGER = 18;
     
-    public float getAxisValue( int axis )
-    {
-        return 0;
-    }
-    
-    public int getControllerId()
+    public final float getAxisValue( int axis )
     {
         return 0;
     }

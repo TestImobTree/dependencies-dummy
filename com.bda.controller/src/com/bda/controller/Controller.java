@@ -20,7 +20,7 @@
  */
 package com.bda.controller;
 
-import android.app.Activity;
+import android.content.Context;
 import android.os.Handler;
 
 public class Controller
@@ -29,29 +29,29 @@ public class Controller
     {
     }
     
-    public static Controller getInstance( Activity activity )
+    public static final Controller getInstance( Context context )
     {
         return new Controller();
     }
     
-    public boolean init()
+    public final boolean init()
     {
         return true;
     }
     
-    public void setListener( ControllerListener listener, Handler handler )
+    public final void setListener( ControllerListener listener, Handler handler )
     {
     }
     
-    public void onPause()
+    public final void onPause()
     {
     }
     
-    public void onResume()
+    public final void onResume()
     {
     }
     
-    public void exit()
+    public final void exit()
     {
     }
 }

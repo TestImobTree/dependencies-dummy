@@ -20,27 +20,17 @@
  */
 package com.bda.controller;
 
-public class KeyEvent
+public class KeyEvent extends BaseEvent
 {
     public static final int ACTION_DOWN = 0;
-    public static final int AXIS_LTRIGGER = 0;
-    public static final int AXIS_RTRIGGER = 0;
-    public static final int AXIS_X = 0;
-    public static final int AXIS_Y = 0;
-    public static final int AXIS_Z = 0;
-    public static final int AXIS_RZ = 0;
+    public static final int ACTION_UP = 1;
     
-    public int getAction()
+    public final int getAction()
     {
         return 0;
     }
     
-    public int getControllerId()
-    {
-        return 0;
-    }
-    
-    public int getKeyCode()
+    public final int getKeyCode()
     {
         return 0;
     }

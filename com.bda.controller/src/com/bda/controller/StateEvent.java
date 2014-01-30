@@ -20,6 +20,6 @@
  */
 package com.bda.controller;
 
-public class StateEvent
+public class StateEvent extends BaseEvent
 {
 }
